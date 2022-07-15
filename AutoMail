@@ -8,8 +8,11 @@ function sendEmail(e) {
   var num = parseInt(amount) // This supposed parse the number collected in the form of string, to an int. 
   var body = "Thank you filling up the form, we will get back to you about the reimbursement, " + name + "."+ "The amount you filed a reimbursement for is  " + num
 
-  GmailApp.sendEmail(recipient, "New Response Submitted", body) // Gmail app API to send the mail to the people who fill the forms. 
-  // Please change the body of the response to as you might see fit. 
+  GmailApp.sendEmail(recipient, "New Response Submitted", body) // Gmail app API to send the mail to the people who fill the forms.
+  //The sendEmail function takes recipient of the mail, subject and the body of the mail
+  
+  // Link to the Google form. https://docs.google.com/forms/d/e/1FAIpQLSc1Jb7Gvw1uh6RxO0IPPmv2OYAjzve_X-723sGI6tOof0CWiQ/viewform
+  //
   
 
 }
