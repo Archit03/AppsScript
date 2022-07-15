@@ -1,6 +1,6 @@
 
 function sendEmail(e) {
-  //namedValues are event objects. An object containing the question ,names and values from the Google form submission. 
+  //namedValues are event objects. An object containing the question ,names and values collected from the Google form submission. 
   var named_values = e.namedValues
   var recipient = named_values["Email Address"] // This is supposed get emails from Google form, once submitted.
   var name = named_values["Your name"] // This gets People's names from the form
