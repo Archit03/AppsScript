@@ -1,0 +1,15 @@
+
+function sendEmail(e) {
+  //namedValues are event objects. An object containing the question ,names and values from the Google form submission. 
+  var named_values = e.namedValues
+  var recipient = named_values["Email Address"] // This is supposed get emails from Google form, once submitted.
+  var name = named_values["Your name"] // This gets People's names from the form
+  var amount = named_values["Bill amount"] // This is supposed to get the bill amount, for Employee reimbursemet.
+  var num = parseInt(amount) // This supposed parse the number collected in the form of string, to an int. 
+  var body = "Thank you filling up the form, we will get back to you about the reimbursement, " + name + "."+ "The amount you filed a reimbursement for is  " + num
+
+  GmailApp.sendEmail(recipient, "New Response Submitted", body) // Gmail app API to send the mail to the people who fill the forms. 
+  // Please change the body of the response to as you might see fit. 
+  
+
+}
