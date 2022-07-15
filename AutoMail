@@ -12,7 +12,6 @@ function sendEmail(e) {
   //The sendEmail function takes recipient of the mail, subject and the body of the mail
   
   // Link to the Google form. https://docs.google.com/forms/d/e/1FAIpQLSc1Jb7Gvw1uh6RxO0IPPmv2OYAjzve_X-723sGI6tOof0CWiQ/viewform
-  //
   
 
 }
